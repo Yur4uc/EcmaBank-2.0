@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcmaBank</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="header__left-block">
+            <div class="header__logo">
+                <img src="icons/icons8-школа-100.png" alt="Логотип">
+            </div>
+            <nav class="header__links">
+                <a href="#" class="header__link">Cтворити банк</a>
+            </nav>
+        </div>
+        <div class="header__right-block">
+            <button data-modal class="btn btn_white">Зв'язатись з нами</button>
+        </div>
+    </header>
+    <div class="container">
+        <div class="cacl">
+            <h2 class="title__calk">Calculator</h2>
+        </div>
+
+        <div class="calculation__sliders">
+            <div class="calculation__slider calculation__loan-amount">
+              <div class="calculation__area-slider">
+                <div class="calculation__slider-label">
+                  <div class="calculation__slider-title">Вартість нерухомості</div>
+                  <div class="input">
+                    <input type="number" id="total-cost" value="1000">
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <input class="calculation__slider-range" id="total-cost-range" type="range" min="0" max="1000000" step="10000" value="1000">
+      
+        <div class="calculation__slider calculation__number-months">
+            <div class="calculation__area-slider">
+              <div class="calculation__slider-label">
+                <div class="calculation__slider-title">Початковий внесоку</div>
+                <div class="input">
+                  <input type="number" id="an-time-credit" value="6">
+                </div>
+              </div>
+              <input class="calculation__slider-range" id="an-time-credit-range" type="range" min="0" max="1000000" step="10000" value="1000">
+            </div>
+        
+        </div>
+
+        <div class="sold">
+          <div class="final-result-wrapper">
+              <div class="final-result-item">
+                <div class="final__title">Сума кредиту</div>
+                <div class="value-item" id="amount-of-credit">0<span>$</span></div>
+              </div>
+            <div class="final-result-item">
+              <div class="final__title">Щомісячний платіж</div>
+              <div class="value-item" id="monthly-payment">0<span>$</span></div>
+            </div>
+            <div class="final-result-item">
+              <div class="final__title">Рекомендований дохід</div>
+              <div class="value-item" id="recommended-income">0<span>$</span></div>
+            </div>
+          </div>
+
+          <div class="calc__valut">
+            <h2 class="ui-title">Перевести валюту</h2>
+            <label class="valut" for="uah">UAH</label>
+            <input class="calcvalt" id="uah" type="text">
+            <label class="valut" for="usd">USD</label>
+            <input class="calcvalt" id="usd" type="text">
+          </div>
+        </div>
+        
+        <div class="calculation__slider calculation__interest-rate">
+            <div class="calculation__area-slider">
+              <div class="calculation__slider-label">
+                <div class="calculation__slider-title">Термін кредиту від 6 до 120 місяців</div>
+                <div class="input">
+                  <input type="number" id="total-percentage" value="5">
+                </div>
+              </div>
+              <input class="calculation__slider-range" id="total-percentage-range" type="range" min="6" max="120" step="1" value="6">
+            </div>
+
+            <div class="content-bank-title">
+              <h2>Виберіть банк</h2>
+            </div>
+            <div class="calculator-content-bode-left-btns">
+              <button data-name="oshad" class="bank active">
+                <div class="text">Ощадбанк</div>
+                <div class="value">від 8,7%</div>
+              </button>
+              <button data-name="pruvatbank" class="bank">
+                <div class="text">Приват банк</div>
+                <div class="value">від 8,4%</div>
+              </button>
+              <button data-name="kredobank" class="bank">
+                <div class="text">Кредобанк</div>
+                <div class="value">від 7,9%</div>
+              </button>
+              <button data-name="otpbank" class="bank">
+                <div class="text">ОПТ банк</div>
+                <div class="value">від 9,2%</div>
+              </button>
+            </div>
+
+        </div>
+
+        <!-- <div class="modal">
+          <div class="modal__dialog">
+              <div class="modal__content">
+                  <form action="#">
+                      <div data-close class="modal__close">&times;</div>
+                      <div class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
+                      <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+                      <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
+                      <button class="btn btn_dark btn_min">Перезвонить мне</button>
+                  </form>
+              </div>
+          </div> 
+         </div> -->
+    </div>
+
+
+
+    
+
+    <script src="js/main.js"></script>
+</body>
+</html>
